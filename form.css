@@ -6,7 +6,14 @@
     color: white;
     vertical-align: center;
 }
-#sectio2 .row .left-top img{
+.container .row .left-section .left-top{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    width: 70%;
+}
+.container .row .left-section .left-top img{
     height: 20px;
     width: 20px;
 
