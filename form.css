@@ -1,0 +1,14 @@
+#section2 .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    vertical-align: center;
+}
+#sectio2 .row .left-top img{
+    height: 20px;
+    width: 20px;
+
+}
+/* https://pagebolt.uicore.co/lead-capture/#    */
