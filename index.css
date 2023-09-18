@@ -89,6 +89,9 @@
     text-decoration: none;
     background-color: #030e60c7;
   }
+  #form-section-area .form-group{
+    margin: 20px;
+  }
   @media (max-width: 884px) {
     .nav {
       padding: 1rem;
@@ -182,3 +185,5 @@
       height: 30px;
     }
   }
+
+  
