@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./section5.css">
     <link rel="stylesheet" href="./section6.css">
     <link rel="stylesheet" href="./section7.css">
+    <link rel="stylesheet" href="./section8.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -292,7 +293,7 @@
               <h2 >Competitive rates to help you <p style="color: #2173FF; display: inline;">save money</p> on your loan</h2>
             </div>
             <div class="para-heading">
-              <p>Whether you’re looking to start a new business, expand your current one, or consolidate debt, we have the options and expertise to help you achieve your financial goals. </p>
+              <p>Whether you are looking to start a new business, expand your current one, or consolidate debt, we have the options and expertise to help you achieve your financial goals. </p>
             </div>
           </div>
           <div class="bottom-lower-sections">
@@ -376,8 +377,8 @@
           <div class="left-right" id="left-right-section">
             <div class="left">
               <div class="top-left">
-                <h2>Rameez Raja</h2>
-                <p>Software Developer</p>
+                <h2 id="persons-name">Rameez Raja</h2>
+                <p id="profession">Software Developer</p>
               </div>
               <div class="middle-left">
                 <img src="./images/startImage.png" alt="star">
@@ -387,23 +388,105 @@
                 <img src="./images/startImage.png" alt="star">
               </div>
               <div class="middle-last">
-                <h2>I was pleasantly surprised to receive a response so quickly, and the terms of the loan were very reasonable.</h2>
+                <p id="persons-detail">I was pleasantly surprised to receive a response so quickly, and the terms of the loan were very reasonable.</p>
               </div>
               <div class="last-buttons">
-                <input type="radio" name="1" onclick="chnage1()">
-                <input type="radio" name="1" onclick="change2()">
-                <input type="radio" name="1" onclick="chnage3()">
+                <input type="radio" name="1" onclick="change1()" id="button1">
+                <input type="radio" name="1" onclick="change2()" id="button2">
+                <input type="radio" name="1" onclick="change3()" id="button3">
               </div>
             </div>
             <div class="right">
               <div class="image-one" id="image-one">
-                <img src="./images/karina-carvalho-fKTKVrNqXQQ-unsplash.jpg" alt="">
+                <img src="./images/Formal Dress Me 1.png" alt="">
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
+    <!-- =================================================section 8 =====================================================  -->
+    <!-- ========================================================================================================================= -->
+
+
+
+    <div class="container-fluid" id="section8-container" style="background-color: #EFF7FE;">
+      <div class="row mt-3 mb-3">
+        <div class="data-content-incolumn d-flex flex-column justify-content-center align-content-center  mt-5 mb-5" id="section8">
+          <div class="top-part1" id="top-part1">
+            <p class="vertical" style="display: inline;"></p>
+            <h3 style="display: inline;">FAQS</h3>
+          </div>
+          <div class="top-part2">
+            <h1>Frequently asked questions</h1>
+          </div>
+
+          <div class="bottom-part" id="bottom-part1">
+            <div class="middle-two-divs" id="middle-two-divs1">
+              <div class="inner-left">
+                <h3 onclick="showContent()" id="show1">What types of loans do you offer? </h3>
+                <p id="i">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+              </div>
+              <div class="button_plus" id="1"></div>
+            </div>
+  
+            <div class="middle-two-divs" id="middle-two-divs2">
+              <div class="inner-left">
+                <h3 onclick="showContent()" id="show2">How much can I borrow? </h3>
+                <p id="ii">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+              </div>
+              <div class="button_plus" id="2"></div>
+            </div>
+  
+            <div class="middle-two-divs" id="middle-two-divs3">
+              <div class="inner-left">
+                <h3 onclick="showContent()" id="show3">How long does the loan application process take? </h3>
+                <p id="iii">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+              </div>
+              <div class="button_plus" id="3"></div>
+            </div>
+  
+            <div class="middle-two-divs" id="middle-two-divs4">
+              <div class="inner-left">
+                <h3 onclick="showContent()" id="show4">What is the interest rate on your loans? </h3>
+                <p id="four">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+              </div>
+              <div class="button_plus" id="4"></div>
+            </div>
+  
+            <div class="middle-two-divs" id="middle-two-divs5">
+              <div class="inner-left">
+                <h3 onclick="showContent()" id="show5">Do I need collateral to get a loan? </h3>
+                <p id="five">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+              </div>
+              <div class="button_plus" id="5"></div>
+            </div>
+  
+            <div class="middle-two-divs" id="middle-two-divs6">
+              <div class="inner-left">
+                <h3 onclick="showContent()" id="show6">Will my credit score affect my loan application? </h3>
+                <p id="six">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+              </div>
+              <div class="button_plus" id="6"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- =========================================================section 9 ==============================================================  -->
+    <!-- =======================================================================================================================================  -->
+
+    
+
+
 
 
 
@@ -423,9 +506,9 @@
                         
                       });
 
-                      var one1 = document.getElementById("one");
-                      var two2 = document.getElementById("two");
-                      var three3 = document.getElementById("three");
+                      let one1 = document.getElementById("one");
+                      let two2 = document.getElementById("two");
+                      let three3 = document.getElementById("three");
 
                       function func1(){
                         one1.style.backgroundColor  = "#FFFFFF"
@@ -440,18 +523,18 @@
                         
 
 
-                        three3.style.backgroundColor  = "#FFFFFF"
-                        // three3.style.color = "#2173FF";
-                        three3.style.border = "none";
-                        three3.style.borderRadius = "8px"
-                        three3.style.paddingTop = "9px";
-                        three3.style.paddingBottom = "9px";
-                        three3.style.paddingLeft = "12px";
-                        three3.style.paddingRight = "12px";
-                        console.log("this is function ");
+                        // three3.style.backgroundColor  = "#FFFFFF"
+                        // // three3.style.color = "#2173FF";
+                        // three3.style.border = "none";
+                        // three3.style.borderRadius = "8px"
+                        // three3.style.paddingTop = "9px";
+                        // three3.style.paddingBottom = "9px";
+                        // three3.style.paddingLeft = "12px";
+                        // three3.style.paddingRight = "12px";
+                        // console.log("this is function ");
                       }
 
-                      func1();
+                      // func1();
 
 
                       function func2(){  
@@ -464,10 +547,10 @@
                         two2.style.paddingLeft = "12px";
                         two2.style.paddingRight = "12px";
                       }
-                      func2();
+                      // func2();
 
 
-                      function func3(three3){
+                      function func3(){
                         three3.style.backgroundColor  = "#FFFFFF"
                         // three3.style.color = "#2173FF";
                         three3.style.border = "none";
@@ -479,9 +562,89 @@
                         console.log("this is function ");
                       }
 
-                      func3(three3);
-                      
+                      // func3(three3);
 
+
+
+
+
+
+
+// ===============================button section ======================================== 
+                      let firstButton = document.getElementById('buttton1');
+                      let secondButton = document.getElementById('biutton2');
+                      let thirdButton =  document.getElementById('button3');
+             
+
+                      let personName = document.getElementById('persons-name');
+                      let professionName = document.getElementById('profession');
+                      let personalDetails = document.getElementById('persons-detail');
+
+
+
+                      function change1(){
+                        personName.innerHTML = "";
+                        personName.innerHTML = "Rameez Raja";
+                        professionName.innerHTML = "Full Stack Developer";
+                        personalDetails.innerHTML = "Hi My name is Rameez and i am working as SDE in Al Almuqeet Systems.Software development is both challenging and rewarding. It's creative like an art-form, but (unlike art) it provides concrete,measurable value" ;
+                        personalDetails.style.fontSize = "23px";
+                      }
+                      // change2();
+
+                      function change3(){
+                        personName.innerHTML = "";
+                        personName.innerHTML = "Aaqib Mohd.";
+                        professionName.innerHTML = "Softaware Developer/ Digital marketer";
+                        personalDetails.innerHTML = "I was pleasantly surprised to receive a response so quickly, and the terms of the loan were very reasonable.i am working as SDE in Al Almuqeet Systems." ;
+                        personalDetails.style.fontSize = "23px";
+                      }
+
+                      function change2(){
+                        personName.innerHTML = "";
+                        personName.innerHTML = "Sheikh Irfan";
+                        professionName.innerHTML = "Softaware Developer/Digital Marketing Expert.";
+                        personalDetails.innerHTML = "I was pleasantly surprised to receive a response so quickly, and the terms of the loan were very reasonable.i am working as SDE in Al Almuqeet Systems" ;
+                        personalDetails.style.fontSize = "23px";
+                       
+                      }
+
+
+                     
+
+                      
+                    $(document).ready(function(){
+                      $("#six ,#five, #four, #iii, #ii, #i").hide();
+                         
+                      $("#show6 , #6").on('click',function(){
+                       
+                        $("#six").toggle("ease")
+                      });
+
+                      $("#show5 , #5").on('click',function(){
+                      
+                        $("#five").toggle("ease")
+                      });
+
+                      $("#show4 , #4").on('click',function(){
+                        
+                        $("#four").toggle("ease")
+                      });
+
+                      $("#show3 , #3").on('click',function(){
+                    
+                        $("#iii").toggle("ease")
+                      });
+
+                      $("#show2 , #2").on('click',function(){
+                       
+                        $("#ii").toggle("ease")
+                      });
+
+                     $("#show1 , #1").on('click',function(){
+                    
+                        $("#i").toggle("ease")
+                    });
+                })
 
 
 

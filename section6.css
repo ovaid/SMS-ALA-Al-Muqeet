@@ -551,8 +551,8 @@
     color: #16171C;
     line-height: 1.1;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 0;
+    margin-right: -10pc;
     display: inline-block;
     margin-top: 6pc;
     margin-bottom: 1.5pc;
@@ -585,8 +585,8 @@
     color: #16171C;
     line-height: 1.1;
     text-align: center;
-    margin-left: 130px;
-    margin-right: 120px;
+    margin-left: 0;
+    margin-right: -11pc;
     display: inline-block;
     margin-bottom: 4pc;
     line-height: 1.5;
@@ -623,11 +623,12 @@
 #section6 #section6-container .bottom-lower-sections .card-container .card h1{
     color: #16171C;
     margin-top: 2pc;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 600;
     text-align: start;
     margin-left: 2pc;
     width: 32rem;
+    display: inline-block;
     
  }
  #section6 #section6-container .bottom-lower-sections .card-container .card p{
@@ -723,24 +724,26 @@
     margin-left:-6.3pc;
     /* margin-right: 3px; */
 }
-/* #section6 #section6-container 
+#section6 #section6-container 
 .both-sections 
 .top-upper-section 
 .para-heading p{
-    /* text-align: center; */
-    /* width: 30%; */
-    /* height: auto; */
-    /* font-size: 19px;
+    text-align: center;
+    width: 70%;
+    height: auto;
+     font-size: 14px;
     font-weight: 400;
     color: #16171C;
     line-height: 1.1;
     text-align: center;
-    margin-left: 130px;
-    margin-right: 120px;
+    margin-left: 12pc;
+    /* margin-right: 120px; */
     display: inline-block;
     margin-bottom: 4pc;
     line-height: 1.5;
-    color: #4A4F5C; */
+    margin-left: 5.7pc;
+    color: #4A4F5C;
+}
      
 
 
@@ -852,7 +855,7 @@
         /* text-align: center; */
         width: 100%;
         /* height: auto; */
-        font-size: 34px;
+        font-size: 23px;
         font-weight: 600;
         color: #16171C;
         line-height:1.1 ;
@@ -863,15 +866,15 @@
         margin-top: 4pc;
         margin-bottom: .1pc;
         margin-left:1px;
-        margin-right: 3px;
+        margin-right: -5.2pc;
     }
     #section6 #section6-container 
     .both-sections 
     .top-upper-section 
     .para-heading{
         text-align: center;
-        width:50vh;
-        font-size: 26px;
+        width:100%;
+        font-size: 10px;
         font-weight: 400;
         color: #16171C;
         line-height:1.1 ;
@@ -881,7 +884,7 @@
         display: inline-block;
         margin-top: 2pc;
         margin-bottom: .1pc;
-        margin-left:-8.1pc;
+        margin-left:-8.8pc;
         /* margin-right: 3px; */
     }
     
@@ -916,11 +919,11 @@
     #section6 #section6-container .bottom-lower-sections .card-container .card h1{
         color: #16171C;
         /* margin-top: 1pc; */
-        font-size:24px;
+        font-size:18px;
         font-weight: 600;
         text-align: left;
         /* margin-left: 2pc; */
-        width: 30rem;
+        width: 90%;
         display: flexbox;
         float: left;
         margin-top: 1pc;
@@ -930,9 +933,9 @@
      }
      #section6 #section6-container .bottom-lower-sections .card-container .card p{
          color: #4A4F5C;
-         width:38vh;
+         width:90%;
          margin-top: 1pc;
-         font-size: 20px;
+         font-size: 15px;
          text-align: left;
          margin-left: .6pc;
          font-weight: 400;
@@ -1001,7 +1004,7 @@
         /* text-align: center; */
         width: 100%;
         /* height: auto; */
-        font-size: 34px;
+        font-size: 17px;
         font-weight: 600;
         color: #16171C;
         line-height:1.1 ;
@@ -1019,8 +1022,8 @@
     .top-upper-section 
     .para-heading{
         text-align: center;
-        width:50vh;
-        font-size: 26px;
+        width:90%;
+        font-size: 15px;
         font-weight: 400;
         color: #16171C;
         line-height:1.1 ;
@@ -1128,6 +1131,151 @@
     }
 
     }
+
+
+
+
+    @media screen and (max-width:305px){
+
+        #section6 #section6-container .row{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+        #section6 #section6-container 
+        .both-sections 
+        .top-upper-section 
+        .upper-heading h2{
+            /* text-align: center; */
+            width: 100%;
+            /* height: auto; */
+            font-size: 18px;
+            font-weight: 600;
+            color: #16171C;
+            line-height:1.1 ;
+            text-align: center;
+            margin-left: 147px;
+            margin-right: 150px;
+            display: inline-block;
+            margin-top: 4pc;
+            margin-bottom: .1pc;
+            margin-left:2.7pc;
+            /* margin-right: 3px; */
+        }
+        #section6 #section6-container 
+        .both-sections 
+        .top-upper-section 
+        .para-heading{
+            text-align: center;
+            width:90%;
+            font-size: 15px;
+            font-weight: 400;
+            color: #16171C;
+            line-height:1.1 ;
+            text-align: center;
+            /* margin-left: 150px; */
+            margin-right: 150px;
+            display: inline-block;
+            margin-top: 2pc;
+            margin-bottom: .1pc;
+            margin-left:-8.1pc;
+            /* margin-right: 3px; */
+        }
+        
+        
+        
+        
+        #section6 #section6-container .bottom-lower-sections .card-container {
+          
+            
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 6fr;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        
+        
+        #section6 #section6-container .bottom-lower-sections .card-container .card {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            color: white;
+            padding: 10px 0 16px;
+            text-align: center;
+            /* text-shadow: 1px 1px 0 #555; */
+            height: auto;
+            width: 100%;
+            text-align: left;
+           
+            
+        }
+        #section6 #section6-container .bottom-lower-sections .card-container .card h1{
+            color: #16171C;
+            /* margin-top: 1pc; */
+            font-size:14px;
+            font-weight: 600;
+            text-align: left;
+            /* margin-left: 2pc; */
+            width: 30rem;
+            display: flexbox;
+            float: left;
+            margin-top: 1pc;
+            margin-left: 1pc;
+          
+            
+         }
+         #section6 #section6-container .bottom-lower-sections .card-container .card p{
+             color: #4A4F5C;
+             width:90%;
+             margin-top: 1pc;
+             font-size: 10px;
+             text-align: left;
+             margin-left: .6pc;
+             font-weight: 400;
+             margin-left: 1pc;
+             display:inline-block;
+         
+          }
+          #section6 #section6-container .bottom-lower-sections .card-container .card i{
+             color: #16171C;
+             margin-top: 2pc;
+             text-align: start;
+             margin-left: 2pc;
+             margin-right: 200px;
+             padding: 16px;
+             background-color: #EDF7FF;
+             border: none;
+             border-radius: 8px;
+             margin-bottom: 1.5pc;
+          }
+          #content2::before{
+            content: "\a";
+            white-space: pre;
+          }
+          #section6 #section6-container .bottom-lower-sections .card-container .card i:hover{
+             color: #004DD1 !important;
+             margin-top: 2pc;
+             text-align: start;
+             margin-left: 2pc;
+             margin-right: 100px;
+             padding: 16px;
+             background-color: #EDF7FF;
+             border: none;
+             border-radius: 8px;
+             margin-bottom: 1.5pc;
+        
+          }
+        #section6-container{
+            background-color: #EFF7FE;
+        }
+        
+        .fas {
+            font-size: 30px;
+        }
+        }
 
 
 

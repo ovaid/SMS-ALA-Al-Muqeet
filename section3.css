@@ -384,12 +384,12 @@
         color: #6E727D;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-family: 'Shantell Sans', cursive;
+        /* font-family: 'Shantell Sans', cursive; */
       }
       #left-part .top-center p{
         font-size: 16px;
         font-weight: 500;
-        font-family: 'Shantell Sans', cursive;
+        /* font-family: 'Shantell Sans', cursive; */
         
       }
       #right-part .top-center p{
