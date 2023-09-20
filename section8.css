@@ -284,6 +284,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-bottom: 2in;
 }
 #section8-container #section8 .bottom-part .middle-two-divs{
     display: flex;
