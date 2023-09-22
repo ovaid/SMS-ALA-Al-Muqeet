@@ -285,7 +285,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-bottom: 2in;
+  /* padding-bottom: 2in; */
 }
 #section8-container #section8 .bottom-part .middle-two-divs{
     display: flex;
@@ -365,13 +365,15 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: -1in;
+  margin-top: 1in;
   background-image: url(./images/backgroundImage1.webp);
   background-color: #092537;
   width: 80%;
   height: 590px;
   border-radius: 20px;
-  position: inherit;
+  margin-bottom: 1in;
+ 
+ 
 }
 
 #lower-bottom-part-section8 .left-data-section{
@@ -946,7 +948,7 @@
   
   
   #lower-bottom-part-section8 .right-image-section img{
-    height: 54.9vh;
+    height: 100%;
     width: 100%;
     text-align: right;
     border-top-right-radius: 10px;
@@ -954,7 +956,7 @@
     opacity: 0.5;
     overflow: hidden;
     margin-left: -12px;
-    margin-bottom: -5.4pc;
+    margin-bottom: -7.4pc;
   }
 }
 
