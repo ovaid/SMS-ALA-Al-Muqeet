@@ -52,6 +52,10 @@
 
 #section3 .three-buttons #one,#two,#three{
     border-radius: 8px;
+    /* margin-left: 20px;
+    margin-right: 10px; */
+    text-align: center;
+    
 }
 #section3 .three-buttons a{
     text-align: center;
@@ -62,13 +66,17 @@
     font-weight: 700;
     cursor: pointer;
     height: 45px;
-    padding-bottom: -4px;
+    padding-top: 10px;
     vertical-align: middle;
     width: 25%;
     font-family: "Manrope", Sans-serif;
 }
+#two{
+    margin-left: 20px;
+}
 #section3 .three-buttons a:hover{
     color: #2173FF;
+    background-color:#FFFFFF;
 }
 /* #section3 .three-buttons a: */
 

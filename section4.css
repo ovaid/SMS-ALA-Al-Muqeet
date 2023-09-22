@@ -652,7 +652,7 @@ br{
     margin-left: -40px;
     margin-right: 0 !important;
     /* line-break: auto; */
-    /* line-height: 50px; */
+    line-height: 1.2;
 
   }
   br{

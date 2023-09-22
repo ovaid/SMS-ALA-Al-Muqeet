@@ -651,6 +651,7 @@
      background-color: #EDF7FF;
      border: none;
      border-radius: 8px;
+     padding-right: 3pc;
   }
   #section6 #section6-container .bottom-lower-sections .card-container .card .fas:hover{
      color: #004DD1;
@@ -1099,7 +1100,7 @@
          margin-top: 2pc;
          text-align: start;
          margin-left: 2pc;
-         margin-right: 14.5pc;
+         margin-right: 20.5pc;
          padding: 12px;
          background-color: #EDF7FF;
          border: none;

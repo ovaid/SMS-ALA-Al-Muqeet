@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="./section8.css">
     <link rel="stylesheet" href="./section9.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include International Telephone Input CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <!-- Include International Telephone Input JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput-jquery.min.js" integrity="sha512-QK4ymL3xaaWUlgFpAuxY+6xax7QuxPB3Ii/99nykNP/PlK3NTQa/f/UbQQnWsM4h5yjQoMjWUhCJbYgWamtL6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -85,7 +90,7 @@
                       </div>
                       <div class="left-middle">
                           <h2>Effortless Messaging,<span style="color: #2173FF"><br>Affordable</span> SMS Solutions</h2>
-                          <p>Leading SMS service provider, delivering instant, reliable, <br> and personalized messaging solutions <br> for businesses worldwide.</p>
+                          <p>Leading SMS service provider, delivering instant, reliable,and personalized<br> messaging solutions for businesses worldwide.</p>
                       </div>
                       <div class="left-bottom">
                           <img width="228" height="42" src="./images/Lead-Capture-Hero-Star.webp" alt="Image">
@@ -101,8 +106,8 @@
                   <!-- Right Section -->
 
 
-                  <div class="right-section" id="rightside-section2">
-                    <section class="pt-5 pb-5">
+                  <div class="right-section" id="rightside-section2" style="width: 50%;">
+                    <section class="pt-1 pb-1">
                       <div class="container text-center">
                           <div class="row">
                               <div class="" id="rigthside-heading">
@@ -111,21 +116,26 @@
                           </div>
                       </div>
                   
-                      <div class="container" id="form-section-area" ">
-                          <div class="row justify-content-center">
-                              <div class="">
+                      <div class="container" id="form-section-area" >
+                          <div class="row justify-content-center align-content-xxl-center">
+                              <div class="form-tag">
                                   <div class="form-area">
                                       <div class="form-inner">
-                                          <form >
+                                          <form>
                                               <div class="form-group">
                                                   <input type="text" class="form-control" placeholder="Name" value=""  required/>
                                               </div>
                                               <div class="form-group">
                                                 <input type="email" class="form-control" placeholder="Email" name="email" required>
                                               </div>
-                                              <div class="form-group">
-                                                <input type="phone_number" name="phone_no" value="" placeholder="Phone No" class="input form-control" autocomplete="off">
+                                              <div class="form-group" style="color: black;">
+                                                <input type="tel" id="phone" name="phone_no" value="" placeholder="Phone No" class="input form-control" autocomplete="off">
                                               </div>
+                                              <div class="form-group" id="form-group-last">
+                                                <!-- Hidden input for the selected country code -->
+                                                <input type="hidden" id="phone-code" name="phone_code">
+                                              </div>
+                                        
                                               <div class="form-group" id="form-group-last">
                                                   <input type="text" class="form-control" placeholder="Email" name="name" required>
                                               </div>
@@ -146,19 +156,19 @@
       <div class="row">
         <div class="top">
           <p class="vertical"></p>
-          <h6 style="display: inline;">PRODUCT</h6>
+          <h6 style="display: inline;">SERVICE</h6>
         </div>
         <div class="middle">
-          <h2>Empower Your Dreams with Our <br> <p style="display: inline; color: #2173FF;">Competitive</p> Loan Offers</h2>
+          <h2>Empowering Nigerian Businesses with <br> <p style="display: inline; color: #2173FF;"> Affordable</p> Bulk SMS</h2>
         </div>
         <div  class="second-middle">
-          <p>Twee salvia kale chips quinoa mlkshk. Beard letterpress listicle, <br> mukbang copper mug DIY helvetica yr offal succulents 3 wolf moon. </p>
+          <p>Elevate your business in Nigeria with our comprehensive bulk SMS services, <br> offering cost-effective communication solutions tailored to your needs </p>
         </div>
         <section class="buttons3">
           <center><div class="three-buttons">
-            <a class="col-md-2 col-lg-3" id="one" href="#" onclick="func()">Borrowing Money</a>
-            <a class="col-md-2 col-lg-3" id="two" href="#" style="margin: 40px;" onclick="func()">Home Loans</a>
-            <a class="col-md-2 col-lg-3" id="three" href="#" onclick="func()">CAR Loans</a>
+            <a class="col-md-2 col-lg-3" id="one" href="#" onclick="func()">Transactional SMS</a>
+            <a class="col-md-2 col-lg-3" id="two" href="#" style="margin-left: 40px;" onclick="func()">Promotional SMS</a>
+            <a class="col-md-2 col-lg-3" id="three" href="#" onclick="func()">Alert SMS</a>
           </div></center>
         </section>
         <div class="bottom-cards">
@@ -167,8 +177,8 @@
             
               <div class="left-Section col-lg-6 col-md-8 col-sm-12 col-xs-12" id="left-part">
                 <div class="top-center">
-                  <h3>Fast and Easy <br> Application Process</h3>
-                  <p>Enamel pin portland tote bag, mlkshk blog <br> mixtape poke butcher wolf. </p>
+                  <h3>Unbeatable Rates and <br>Delivery Speeds</h3>
+                  <p>Unmatched Rates, Lightning-Fast Delivery<br> Finances, Your Way, Your Freedom Unleashed.</p>
                 </div>
                 <div class="bottom-two-images" id="tow-left-images">
                   <img class="left-image" src="./images/cardImageleft.webp" alt="">
@@ -177,8 +187,8 @@
               </div>
               <div class="right-Section col-lg-6 col-md-8 col-sm-12 col-xs-12" id="right-part">
                 <div class="top-center">
-                  <h3>Customizable <br> Repayment Plans</h3>
-                  <p>Gatekeep sartorial synth poutine mixtape <br> blue bottle yr tumblr fam. </p>
+                  <h3>Customizable <br>Payment Plans</h3>
+                  <p>Tailor-Made Payment Solutions:<br> Your Ultimate Choice for Speed and Savings.</p>
                 </div>
                 <div class="bottom-one-images" id="one-right-image">
                   <img class="right-single-image" src="./images/rigthCradImage.webp" alt="">      
@@ -207,24 +217,25 @@
             </div>
 
             <div class="left-data-middle">
-              <h2>Secure Your Financial <br> Future with Our Low- <br> Interest Loan Services</h2>
-              <p>Put a bird on it church-key etsy, salvia yr tumeric artisan. <br> Green juice chambray mixtape microdosing tattooed copper <br> mug 3 wolf moon chillwave. </p>
+              <h2>Celebrate the Power of Seamless Communication<br> with Our Innovative Bulk<br> SMS Platform</h2>
+              <p>Elevate your messaging game with our cutting-edge Bulk SMS<br> Platform, delivering seamless, personalized communication that<br> connects, engages, and succeeds.</p>
             </div>
 
             <div class="left-data-bottom">
               <div class="bottom-sec">
                 <img src="./images/tick.png" alt="">
-                <p>Easy application process </p>
+                <p>Dynamic Sender ID</p>
               </div>
 
               <div class="bottom-sec">
                 <img src="./images/tick.png" alt="">
-                <p>Easy application process </p>
+                <p>Two Factor Authentication</p>
               </div>
 
               <div class="bottom-sec">
                 <img src="./images/tick.png" alt="">
-                <p>Easy application process </p>
+                <p>Real Time reports
+                </p>
               </div>
             </div>
 
@@ -272,10 +283,10 @@
               <h6 style="display: inline;">FEATURES</h6>
             </div>
             <div class="middle-section">
-              <h2>Take control of your financial future with our tailored loan solutions</h2>
+              <h2>Seize command of your messaging strategy with our customized Bulk SMS Service Platform</h2>
             </div>
             <div class="lower-section">
-              <p >Our quick and easy application process, competitive rates, and flexible terms make it easy to get the money you need to grow your business or consolidate debt.</p>
+              <p >Empower your communication efforts using our tailored Bulk SMS Service Platform, gaining full control and achieving messaging excellence with ease.</p>
             </div>
             <div class="bottom-most-section">
               <a href="">Get Started > </a>
@@ -294,50 +305,52 @@
         <div class="row both-sections">
           <div class="top-upper-section">
             <div class="upper-heading">
-              <h2 >Competitive rates to help you <p style="color: #2173FF; display: inline;">save money</p> on your loan</h2>
+              <h2 >Affordable pricing to <p style="color: #2173FF; display: inline;">maximize</p> your savings on bulk SMS services.</h2>
             </div>
             <div class="para-heading">
-              <p>Whether you are looking to start a new business, expand your current one, or consolidate debt, we have the options and expertise to help you achieve your financial goals. </p>
+              <p>Unlock incredible value with our budget-friendly pricing options, designed to optimize your budget while delivering top-notch bulk SMS services for all your communication needs.
+              </p>
             </div>
           </div>
+          <!-- ===========================================till this===================  -->
           <div class="bottom-lower-sections">
 
             <section class="card-container" id="six-cards">
 
               <div class="card col-xs-12 col-sm-5 col-md-6 col-lg-4">
                 <i class="fas fa-paint-brush" id="fas"></i>
-                <h1>Secure and confidential </h1>
-                <p>We understand the importance of keeping your personal and financial information secure. </p>
+                <h1>Unicode Support</h1>
+                <p>Unicode enables global text communication by encoding characters from diverse scripts and languages.</p>
               </div>
             
               <div class="card card col-xs-12 col-sm-5 col-md-6 col-lg-4">
                 <i class="fas fa-desktop"  id="fas"></i>
-                <h1 id="content1">Helpful and friendly <span id="content2"></span>customer service </h1>
-                <p>Our team of loan specialists is here to answer any questions you may have and help you through the process. </p>
+                <h1 id="content1">OTP Verification API</h1>
+                <p>Securely authenticate users through one-time password (OTP) verification with this API.</p>
               </div>
             
               <div class="card card col-xs-12 col-sm-5 col-md-6 col-lg-4">
                 <i class="fas fa-handshake"  id="fas"></i>
-                <h1>No hidden fees </h1>
-                <p>We believe in transparency and honesty. That’s why there are no hidden fees or surprises with our loans. </p>
+                <h1>Contact List API</h1>
+                <p>Effortlessly manage and access your contact list with this versatile API.</p>
               </div>
             
               <div class="card card col-xs-12 col-sm-5 col-md-6 col-lg-4">
                 <i class="fas fa-address-book"  id="fas"></i>
-                <h1>Competitive interest rates </h1>
-                <p>We pride ourselves on offering some of the most competitive interest rates in the industry. </p>
+                <h1>Wholesale Pricing</h1>
+                <p>Bulk purchase discounts for cost-effective procurement of goods and services.</p>
               </div>
             
               <div class="card card col-xs-12 col-sm-5 col-md-6 col-lg-4">
                 <i class="fas fa-chess"  id="fas"></i>
-                <h1>Flexible repayment options </h1>
-                <p>We offer a variety of repayment plans to fit your specific needs and budget. </p>
+                <h1>Personalized SMS</h1>
+                <p>Tailor and send custom text messages to engage and connect personally.</p>
               </div>
             
               <div class="card card col-xs-12 col-sm-5 col-md-6 col-lg-4">
                 <i class="fas fa-bug"  id="fas"></i>
-                <h1>Easy application process </h1>
-                <p>Our online application is simple and straightforward, allowing you to apply for a loan in just a few minutes. </p>
+                <h1>Bulk Contact Uploads</h1>
+                <p>Efficiently add multiple contacts to your database in a single upload.</p>
               </div>
             
             </section>
@@ -381,7 +394,7 @@
           <div class="left-right" id="left-right-section">
             <div class="left">
               <div class="top-left">
-                <h2 id="persons-name">Rameez Raja</h2>
+                <h2 id="persons-name">Adeoluwa Adekunle</h2>
                 <p id="profession">Software Developer</p>
               </div>
               <div class="middle-left">
@@ -392,7 +405,7 @@
                 <img src="./images/startImage.png" alt="star">
               </div>
               <div class="middle-last">
-                <p id="persons-detail">I was pleasantly surprised to receive a response so quickly, and the terms of the loan were very reasonable.</p>
+                <p id="persons-detail">Your SMS platform has been a game-changer for our marketing efforts. It's easy to use and incredibly effective!</p>
               </div>
               <div class="last-buttons">
                 <input type="radio" name="1" onclick="change1()" id="button1">
@@ -430,48 +443,48 @@
           <div class="bottom-part" id="bottom-part1">
             <div class="middle-two-divs" id="middle-two-divs1">
               <div class="inner-left">
-                <h3 onclick="showContent()" id="show1">What types of loans do you offer? </h3>
-                <p id="i">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+                <h3 onclick="showContent()" id="show1">What is your SMS platform, and how does it work?</h3>
+                <p id="i">Our SMS platform is a web-based service that allows you to send text messages to individuals or groups. You can compose and send messages through our user-friendly interface, and we'll ensure their timely delivery to recipients.</p>
               </div>
               <div class="button_plus" id="1"></div>
             </div>
   
             <div class="middle-two-divs" id="middle-two-divs2">
               <div class="inner-left">
-                <h3 onclick="showContent()" id="show2">How much can I borrow? </h3>
-                <p id="ii">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+                <h3 onclick="showContent()" id="show2">Is my data secure when using your SMS platform?</h3>
+                <p id="ii">Yes, we prioritize data security. We employ encryption protocols to protect your data and messages. Rest assured that your information is safe with us.</p>
               </div>
               <div class="button_plus" id="2"></div>
             </div>
   
             <div class="middle-two-divs" id="middle-two-divs3">
               <div class="inner-left">
-                <h3 onclick="showContent()" id="show3">How long does the loan application process take? </h3>
-                <p id="iii">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+                <h3 onclick="showContent()" id="show3">What types of messages can I send using your platform?</h3>
+                <p id="iii">Our platform supports various message types, including promotional SMS, transactional SMS, and one-time password (OTP) messages.</p>
               </div>
               <div class="button_plus" id="3"></div>
             </div>
   
             <div class="middle-two-divs" id="middle-two-divs4">
               <div class="inner-left">
-                <h3 onclick="showContent()" id="show4">What is the interest rate on your loans? </h3>
-                <p id="four">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+                <h3 onclick="showContent()" id="show4">How can I sign up for your SMS platform?</h3>
+                <p id="four">Signing up is easy! Just visit our website and follow the registration process. Once registered, you can start using our platform right away.</p>
               </div>
               <div class="button_plus" id="4"></div>
             </div>
   
             <div class="middle-two-divs" id="middle-two-divs5">
               <div class="inner-left">
-                <h3 onclick="showContent()" id="show5">Do I need collateral to get a loan? </h3>
-                <p id="five">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+                <h3 onclick="showContent()" id="show5">What is the pricing structure for your SMS services?</h3>
+                <p id="five">Our pricing depends on your usage. We offer both subscription plans and pay-as-you-go options. You can find detailed pricing information on our website.</p>
               </div>
               <div class="button_plus" id="5"></div>
             </div>
   
             <div class="middle-two-divs" id="middle-two-divs6" style="margin-bottom:3pc;">
               <div class="inner-left">
-                <h3 onclick="showContent()" id="show6">Will my credit score affect my loan application? </h3>
-                <p id="six">We offer a wide range of loan options, including personal loans, home loans, car loans, and business loans.</p>
+                <h3 onclick="showContent()" id="show6">Do you offer discounts for bulk SMS purchases?</h3>
+                <p id="six">Yes, we provide bulk SMS discounts based on the volume of messages you purchase. The more you buy, the more you save.</p>
               </div>
               <div class="button_plus" id="6"></div>
             </div>
@@ -479,7 +492,7 @@
 
           <div class="image-part-bottom" id="lower-bottom-part-section8">
             <div class="left-data-section">
-              <h2 class="h2-data d-inline-block">Hassle-Free Loan Services for Every Situation</h2>
+              <h2 class="h2-data d-inline-block">Seamless SMS Solutions for All Your Messaging Needs, Anytime, Anywhere.</h2>
               <a class="a-button" href="">Get Started ></a>
             </div>
             <div class="right-image-section">
@@ -551,6 +564,19 @@
 
                         
                       });
+                      $(document).ready(function () {
+            // Initialize the International Telephone Input plugin
+            var input = document.querySelector("#phone");
+            var iti = window.intlTelInput(input, {
+                separateDialCode: true, // Show country code separately
+            });
+
+            // Update the hidden input field with the selected country code
+            input.addEventListener("countrychange", function () {
+                var countryCode = iti.getSelectedCountryData().dialCode;
+                $("#phone-code").val("+" + countryCode);
+            });
+        });
 
                       let one1 = document.getElementById("one");
                       let two2 = document.getElementById("two");
@@ -585,25 +611,26 @@
 
                       function func2(){  
                         two2.style.backgroundColor  = "#FFFFFF"
-                        // two2.style.color = "#2173FF";
+                        // one1.style.color = "#2173FF";
                         two2.style.border = "none";
                         two2.style.borderRadius = "8px"
                         two2.style.paddingTop = "9px";
                         two2.style.paddingBottom = "9px";
                         two2.style.paddingLeft = "12px";
                         two2.style.paddingRight = "12px";
+                        
                       }
                       // func2();
 
 
                       function func3(){
                         three3.style.backgroundColor  = "#FFFFFF"
-                        // three3.style.color = "#2173FF";
+                        // one1.style.color = "#2173FF";
                         three3.style.border = "none";
                         three3.style.borderRadius = "8px"
                         three3.style.paddingTop = "9px";
                         three3.style.paddingBottom = "9px";
-                        three3.style.paddingLeft = "12px";
+                        three3.style.paddingLeft = "8px";
                         three3.style.paddingRight = "12px";
                         console.log("this is function ");
                       }
@@ -630,26 +657,26 @@
 
                       function change1(){
                         personName.innerHTML = "";
-                        personName.innerHTML = "Rameez Raja";
+                        personName.innerHTML = "Adeoluwa Adekunle";
                         professionName.innerHTML = "Full Stack Developer";
-                        personalDetails.innerHTML = "Hi My name is Rameez and i am working as SDE in Al Almuqeet Systems.Software development is both challenging and rewarding. It's creative like an art-form, but (unlike art) it provides concrete,measurable value" ;
+                        personalDetails.innerHTML = "Your SMS platform has been a game-changer for our marketing efforts. It's easy to use and incredibly effective!" ;
                         personalDetails.style.fontSize = "23px";
                       }
                       // change2();
 
                       function change3(){
                         personName.innerHTML = "";
-                        personName.innerHTML = "Aaqib Mohd.";
+                        personName.innerHTML = "Fatima Abdullahi";
                         professionName.innerHTML = "Softaware Developer/ Digital marketer";
-                        personalDetails.innerHTML = "I was pleasantly surprised to receive a response so quickly, and the terms of the loan were very reasonable.i am working as SDE in Al Almuqeet Systems." ;
+                        personalDetails.innerHTML = "We've tried several SMS platforms, but yours stands out for its reliability and excellent customer support." ;
                         personalDetails.style.fontSize = "23px";
                       }
 
                       function change2(){
                         personName.innerHTML = "";
-                        personName.innerHTML = "Sheikh Irfan";
+                        personName.innerHTML = "Chika Obi";
                         professionName.innerHTML = "Softaware Developer/Digital Marketing Expert.";
-                        personalDetails.innerHTML = "I was pleasantly surprised to receive a response so quickly, and the terms of the loan were very reasonable.i am working as SDE in Al Almuqeet Systems" ;
+                        personalDetails.innerHTML = "Impressive results! Our engagement rates have soared since we started using your SMS platform. Highly recommended!" ;
                         personalDetails.style.fontSize = "23px";
                        
                       }
