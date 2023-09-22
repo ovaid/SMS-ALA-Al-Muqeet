@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./section7.css">
     <link rel="stylesheet" href="./section8.css">
     <link rel="stylesheet" href="./section9.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput-jquery.min.js" integrity="sha512-QK4ymL3xaaWUlgFpAuxY+6xax7QuxPB3Ii/99nykNP/PlK3NTQa/f/UbQQnWsM4h5yjQoMjWUhCJbYgWamtL6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
@@ -81,8 +84,8 @@
                           <span>BEST SMS SERVICING PLATFORM</span>
                       </div>
                       <div class="left-middle">
-                          <h2>Our Flexible and <span style="color: #2173FF">Affordable</span> Loan Solutions</h2>
-                          <p>Two sustainable salvia kitsch direct trade pour-over, <br> asymmetrical tumeric coloring book chillwave <br> lomo Brook</p>
+                          <h2>Effortless Messaging,<span style="color: #2173FF"><br>Affordable</span> SMS Solutions</h2>
+                          <p>Leading SMS service provider, delivering instant, reliable, <br> and personalized messaging solutions <br> for businesses worldwide.</p>
                       </div>
                       <div class="left-bottom">
                           <img width="228" height="42" src="./images/Lead-Capture-Hero-Star.webp" alt="Image">
@@ -121,7 +124,7 @@
                                                 <input type="email" class="form-control" placeholder="Email" name="email" required>
                                               </div>
                                               <div class="form-group">
-                                                  <input type="text" id="mobile_code" class="form-control" placeholder="Phone Number" name="name" required>
+                                                <input type="phone_number" name="phone_no" value="" placeholder="Phone No" class="input form-control" autocomplete="off">
                                               </div>
                                               <div class="form-group" id="form-group-last">
                                                   <input type="text" class="form-control" placeholder="Email" name="name" required>
@@ -538,11 +541,13 @@
 
            // -----Country Code Selection
                    $(document).ready(function(){
-                     $("#mobile_code").intlTelInput({
-	                       initialCountry: "in",
-	                     separateDialCode: true
-	                    // utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
-                        });
+                    var instance = $("[name=phone_no]")
+                      instance.intlTelInput();
+
+                      $("[name=phone_no]").on("blur", function() {
+                        console.log($(this).val())
+                        console.log(instance.intlTelInput('getSelectedCountryData').dialCode) //get counrty code
+                      })
 
                         
                       });

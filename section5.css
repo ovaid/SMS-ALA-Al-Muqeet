@@ -33,6 +33,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    text-align: -10pc;
     
 }
 #section5 .left-right .left-side .two-images img{
@@ -43,7 +44,7 @@
     
 }
 #section5 .left-right .left-side .lower-one-image img{
-   width: 97%;
+   width: 96%;
    height: auto;
    margin: 10px;
    border-radius: 10px;
@@ -84,7 +85,7 @@
     text-align: left;
 }
 #section5 .left-right .right-side .middle-section h2{
-    font-size: 60px;
+    font-size: 57px;
   font-weight: 600;
   text-align: left;
   color: #FFFFFF;
