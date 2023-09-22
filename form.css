@@ -86,9 +86,10 @@
     text-align: center;
     border: none;
     border-radius: 20px;
-    background-color: #080240;
+    background-color: white;
+    opacity: 1;
     /* color: #16171C; */
-    vertical-align: top;
+    vertical-align:middle;
     
     /* margin: 90px; */
 }
