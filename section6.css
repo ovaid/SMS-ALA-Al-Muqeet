@@ -1081,16 +1081,17 @@
         
      }
      #section6 #section6-container .bottom-lower-sections .card-container .card p{
-         color: #4A4F5C;
-         width:38vh;
-         margin-top: 1pc;
-         font-size: 18px;
-         text-align: left;
-         margin-left: .6pc;
-         font-weight: 400;
-          margin-left: 1pc;
-         display:inline-flexbox;
-         padding-right: 12px;
+        color: #4A4F5C;
+        /* width: ; */
+        margin-top: 1pc;
+        font-size: 18px;
+        text-align: left;
+        margin-left: .6pc;
+        font-weight: 400;
+        margin-left: 1pc;
+        display: inline-flexbox;
+        padding-right: 12px;
+      }
      
       }
       #section6 #section6-container .bottom-lower-sections .card-container .card i{
