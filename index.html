@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/clvgigus.bmp">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./form.css">
@@ -41,11 +41,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
     
     <title>SMS-ALA</title>
+
+     <style>
+    
+    </style> 
+    
 </head>
 <body>
                             <!-- ===================section header=====================  -->
 
-        <div class="container-fluid elementor-background-overlay mt-0" id="header"  >
+        <!-- <div class="container-fluid"> -->
+          <div class="container-fluid elementor-background-overlay mt-0" id="header"  >
             <div class="row position-sticky" id="top-navbar" >
                 <div class="navbar">
                     <nav class="nav">
@@ -93,7 +99,7 @@
                           <p>Leading SMS service provider, delivering instant, reliable,and personalized<br> messaging solutions for businesses worldwide.</p>
                       </div>
                       <div class="left-bottom">
-                          <img width="228" height="42" src="./images/Lead-Capture-Hero-Star.webp" alt="Image">
+                          <img width="100%" height="42" src="./images/Lead-Capture-Hero-Star.webp" alt="Image">
                           <p>4.7/5 on <b>TrustPilot</b></p>
                       </div>
                   </div>
@@ -106,30 +112,30 @@
                   <!-- Right Section -->
 
 
-                  <div class="right-section" id="rightside-section2" style="width: 50%;">
-                    <section class="pt-1 pb-1">
+                  <div class="right-section" id="rightside-section2">
+                    <section class="pt-1 pb-1 d-flex flex-column">
                       <div class="container text-center">
-                          <div class="row">
+                          <div class="row" style="padding-top: 50px; margin-bottom: -1pc;">
                               <div class="" id="rigthside-heading">
-                                  <h4 style="margin-bottom: 40px;"><a href="" target="_blank">Country Code Selection</a></h4>
+                                  <h4 style="margin-bottom: 40px;"><a href="" target="_blank" style=" text-decoration: none; font-size:auto; font-weight: auto;">Country Code Selection</a></h4>
                               </div>
                           </div>
                       </div>
                   
                       <div class="container" id="form-section-area" >
-                          <div class="row justify-content-center align-content-xxl-center">
+                          <div class="row justify-content-center align-content-xxl-center align-content-xl-center align-content-lg-center">
                               <div class="form-tag">
                                   <div class="form-area">
                                       <div class="form-inner">
                                           <form>
                                               <div class="form-group">
-                                                  <input type="text" class="form-control" placeholder="Name" value=""  required/>
+                                                  <input  type="text" class="form-control1" placeholder="Name" value=""  required/>
                                               </div>
                                               <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                                <input type="email" class="form-control1" placeholder="Email" name="email" required>
                                               </div>
-                                              <div class="form-group" style="color: black;">
-                                                <input type="tel" id="phone" name="phone_no" value="" placeholder="Phone No" class="input form-control" autocomplete="off">
+                                              <div class="form-group" style="color: black;" id="phoneNumber">
+                                                <input type="tel" id="phone" name="phone_no" value="" placeholder="Phone No" class="input form-control1" autocomplete="off">
                                               </div>
                                               <div class="form-group" id="form-group-last">
                                                 <!-- Hidden input for the selected country code -->
@@ -137,7 +143,7 @@
                                               </div>
                                         
                                               <div class="form-group" id="form-group-last">
-                                                  <input type="text" class="form-control" placeholder="Email" name="name" required>
+                                                  <input type="text" class="form-control1" placeholder="Email" name="name" required>
                                               </div>
                                               <button type="submit" class="btn btn-primary form-submit">Submit</button>
                                           </form>
@@ -539,6 +545,7 @@
             </form>
           </div>
     </div>
+        <!-- </div> -->
  
 
 
@@ -717,7 +724,25 @@
                     
                         $("#i").toggle("ease")
                     });
-                })
+                });
+
+                const topNavbar = document.getElementById("top-navbar");
+                let lastScrollY = window.scrollY;
+                let isSticky = false;
+
+                 window.addEventListener("scroll", () => {
+                    const currentScrollY = window.scrollY;
+
+                if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        if (!isSticky) {
+            topNavbar.classList.add("sticky");
+            isSticky = true;
+        }
+    } 
+
+    lastScrollY = currentScrollY;
+});
 
 
 

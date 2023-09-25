@@ -1,7 +1,6 @@
 * {
-    /* box-sizing: border-box; */
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; 
+
   }
   #header{
      background-image: url(https://pagebolt.uicore.co/lead-capture/wp-content/uploads/sites/2/2023/03/Lead-Capture-Hero-BG.webp);
@@ -11,22 +10,19 @@
      
   }
   .container-fluid #header{
-    margin: 0;
     height: 20vh;
   }
   .link{
    height: 30px;
    width: 100px;
   }
-  body {
-    margin: 0;
-  }
+
   .nav {
     width: 100%;
     /* background-color: #001726; */
     display: flex;
     align-items: center;
-    height: 30vh;
+    height: 20vh;
     background-color: #001726;
 
    
@@ -125,7 +121,7 @@
       background-color: rgb(239, 234, 234);
       height: 0;
       transition: all 0.5s ease-in-out;
-      top: 100px;
+      top: 80px;
       left: 0;
       margin-bottom: 20px;
       overflow: hidden;

@@ -576,7 +576,7 @@
         justify-content: center !important;
         align-items: center !important;
         text-align: center;
-        width: 100%;
+        width: 99%;
         height: auto;
         margin-left: 1px;
     }
@@ -704,7 +704,7 @@
         text-align: center !important;
         vertical-align: middle;
         margin-top: 1.7pc;
-        width: 100%;
+        width: 88%;
         margin-bottom: 4pc;
         height: auto;
         /* margin-left: 6pc; */

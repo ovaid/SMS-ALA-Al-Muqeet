@@ -661,7 +661,8 @@ br{
   .section4 .leftSide-data .left-data-middle p {
     text-align: left !important;
     color: #4A4F5C;
-    font-size: 19px;
+    font-size: 18px;
+    font-weight: 400;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: -40px;
